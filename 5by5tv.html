@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+.show {}
+.show-img {}
+.show-title {}
+.show-subhead { font-size: 12px; }
+.show-date { text-transform: uppercase; }  /* .show-subhead-date is probably overkill */
+
+/* SASS syntax obviously won't work in browser, but you get the idea */
+.box {
+	> header {}
+	> footer {}
+}
+
+.box-banner { background-image: url(); }
+
+</style>
+</head>
+<body>
+
+<div class="l-header">
+
+</div>
+
+<div class="l-content">
+    <div class="box">
+        <h2>New Shows</h2>
+    </div>
+    <div class="carousel">
+        <ul class="layout-horizontal">
+            <li>
+                <div class="show">
+                    <img>
+                    <h3>{{show-head}}</h3>
+                    <h4> class="show-subhead show-date">{{show-date}}</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="podcasts">
+        <h2>Podcasts</h2>
+        <ul>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#web">Web</a></li>
+            <li><a href="#culture">Culture</a></li>
+        </ul>
+        <ul class="layout-grid">
+            <li>
+                <div class="show">
+                    <img>
+                    <h3>{{show-head}}</h3>
+                    <h4> class="show-subhead show-date">{{show-date}}</h4>
+                </div>
+            </li>
+        </ul>    
+    </div>
+</div>
+
+</body>
+</html>
